@@ -80,7 +80,10 @@
                 <p class="rise-eyebrow">A thoughtful next step</p>
                 <h2 id="consultation-heading">Every RISE engagement begins with a conversation.</h2>
                 <p class="cta-text">Programs are tailored to your objectives, timeline, and desired level of support. Investment and availability are discussed during your initial consultation.</p>
-                <form id="consultation-form" class="consultation-form" data-endpoint="" aria-describedby="inquiry-privacy inquiry-status">
+                <form id="consultation-form" class="consultation-form" data-endpoint="https://api.web3forms.com/submit" aria-describedby="inquiry-privacy inquiry-status">
+                    <input type="hidden" name="access_key" value="244ce648-0257-4802-a34d-25775f67fb3b">
+                    <input type="hidden" name="subject" value="New RISE consultation inquiry">
+                    <input type="checkbox" name="botcheck" tabindex="-1" style="display:none" aria-hidden="true">
                     <p id="inquiry-status" role="status" aria-live="polite">Online inquiries are not available yet. Please contact justine.tech.exec@gmail.com directly.</p>
                     <fieldset id="inquiry-fields" disabled>
                         <legend>Your consultation inquiry</legend>
@@ -99,7 +102,7 @@
                         </select>
                         <label for="inquiry-message">What would you like support with?</label>
                         <textarea id="inquiry-message" name="message" rows="5" maxlength="3000" required></textarea>
-                        <p id="inquiry-privacy">Please do not include confidential employer or client information. Your name, email, and message will be processed by Formspree and sent to Justine to respond to your inquiry.</p>
+                        <p id="inquiry-privacy">Please do not include confidential employer or client information. Your name, email, and message will be processed by Web3Forms and sent to Justine to respond to your inquiry.</p>
                         <button class="btn-primary" type="submit">Send Inquiry</button>
                     </fieldset>
                 </form>
