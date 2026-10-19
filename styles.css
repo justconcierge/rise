@@ -1,3 +1,84 @@
+/* Testimonial-led homepage: scoped to preserve the existing bio page. */
+.hero.rise-hero { padding: 100px 0 90px; }
+.rise-hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4rem; align-items: center; }
+.rise-eyebrow { font-size: .75rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; color: #914b43; margin-bottom: 1.5rem; }
+.rise-hero h1 { font-size: clamp(2.8rem, 4.6vw, 4.3rem); line-height: 1.1; }
+.rise-hero h1 em { color: #914b43; font-weight: 400; }
+.rise-hero .hero-subtitle { font-size: 1.12rem; margin-bottom: 2rem; }
+.rise-actions { display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; }
+.rise-actions .btn-primary { background: #914b43; border-color: #914b43; padding: 1rem 1.5rem; }
+.rise-text-link { color: #713d37; text-underline-offset: 5px; font-size: .95rem; font-weight: 500; }
+.rise-quote-card { position: relative; padding: 2.5rem; background: #fffcf7; border: 1px solid #e7d5cd; border-radius: 4px; box-shadow: 0 20px 55px #7846380d; }
+.rise-quote-card blockquote { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.65rem, 2.5vw, 2.2rem); line-height: 1.35; color: #342d29; }
+.rise-attribution { font-weight: 600; margin: 1.75rem 0 1rem; }
+.rise-attribution span { display: block; font-weight: 400; font-size: .8rem; color: #625750; margin-top: .25rem; }
+.rise-client-story { background: #fffcf7; scroll-margin-top: 110px; }
+.rise-story-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 5rem; align-items: start; }
+.rise-story-grid h2 { font-size: clamp(2.3rem, 3.4vw, 3.2rem); margin-bottom: 1.5rem; }
+.rise-story-grid > div > p:not(.rise-eyebrow) { margin-bottom: 1.5rem; }
+.rise-full-review { border-left: 2px solid #d4aaa0; padding-left: 2rem; }
+.rise-review-label { font-size: .85rem; font-weight: 600; color: #713d37; }
+.rise-full-review blockquote p { margin-bottom: 1.25rem; }
+.rise-review-note { font-size: .8rem; color: #625750; }
+.rise-featured-quote { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.75rem, 2.7vw, 2.4rem); line-height: 1.35; margin-bottom: 1.5rem; }
+.rise-review-details { margin-bottom: 1.5rem; }
+.rise-review-details summary { cursor: pointer; color: #713d37; font-weight: 500; padding: .5rem 0; text-underline-offset: 4px; }
+.rise-review-details[open] summary { margin-bottom: 1rem; }
+.rise-review-details summary:focus-visible { outline: 3px solid #713d37; outline-offset: 4px; }
+.rise-hero a:focus-visible, .rise-client-story a:focus-visible { outline: 3px solid #713d37; outline-offset: 6px; }
+@media (max-width: 900px) {
+    .rise-hero-grid, .rise-story-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero.rise-hero { padding: 60px 0; }
+    .rise-hero .container, .rise-client-story .container { padding-left: 24px; padding-right: 24px; }
+    .rise-quote-card { padding: 1.75rem; }
+    .rise-full-review { padding-left: 1.25rem; }
+}
+
+.hero.services-hero { padding: 100px 0 90px; }
+.services-hero h1 em { color: #914b43; font-weight: 400; }
+.services-page .btn-primary { background: #914b43; border-color: #914b43; }
+.service-list { max-width: 1100px; }
+.service-entry { display: grid; grid-template-columns: 64px 1fr; gap: 2rem; padding: 3rem 0; border-bottom: 1px solid #e7d5cd; }
+.service-entry-featured { background: #fef3f2; padding: 2.5rem; border: 1px solid #e7d5cd; border-radius: 8px; margin-bottom: 1rem; }
+.service-number { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; color: #914b43; }
+.service-entry h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); margin-bottom: 1rem; }
+.service-entry p { margin-bottom: 1rem; }
+.service-fit { font-size: .95rem; color: #625750; }
+.service-value { color: #713d37; }
+.service-resources { padding-top: 2rem; color: #625750; font-size: .95rem; }
+.services-page #consultation { scroll-margin-top: 110px; }
+.services-page a:focus-visible { outline: 3px solid #713d37; outline-offset: 5px; }
+@media (max-width: 900px) {
+    .navbar .container { flex-wrap: wrap; gap: .6rem; padding: 1rem 24px; }
+    .navbar .nav-links { flex-wrap: wrap; gap: .5rem 1rem; }
+    .navbar .nav-links a { font-size: .85rem; }
+    .hero.services-hero { padding: 90px 0 60px; }
+    .services-page .container { padding-left: 24px; padding-right: 24px; }
+    .service-entry { grid-template-columns: 35px 1fr; gap: 1rem; }
+    .service-entry-featured { padding: 1.5rem; }
+}
+
+.hero.hero-bio { padding: 70px 0; }
+.bio-hero-layout { position: relative; display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 4rem; }
+.bio-hero-portrait { display: block; width: 100%; max-width: 420px; height: auto; justify-self: end; border-radius: 8px; border: 1px solid #e7d5cd; box-shadow: 0 20px 55px #78463818; }
+@media (max-width: 768px) {
+    .bio-hero-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .bio-hero-portrait { max-width: 360px; justify-self: center; }
+    .hero.hero-bio { padding: 65px 0 45px; }
+}
+
+.consultation-form { max-width: 640px; margin: 2rem auto 0; text-align: left; }
+.consultation-form fieldset { border: 0; padding: 0; min-width: 0; }
+.consultation-form legend { font-weight: 600; margin-bottom: 1rem; }
+.consultation-form label { display: block; margin: 1rem 0 .4rem; font-weight: 500; }
+.consultation-form input, .consultation-form select, .consultation-form textarea { box-sizing: border-box; width: 100%; padding: .85rem; border: 1px solid #b79389; border-radius: 5px; background: #fff; color: #262626; font: inherit; }
+.consultation-form textarea { resize: vertical; }
+.consultation-form #inquiry-privacy { font-size: .85rem; margin: 1rem 0; }
+.consultation-form #inquiry-status { margin-bottom: 1.5rem; }
+.consultation-form button { cursor: pointer; font-family: inherit; }
+.consultation-form button:disabled { opacity: .6; cursor: not-allowed; }
+.consultation-form :focus-visible { outline: 3px solid #713d37; outline-offset: 3px; }
+
 * {
     margin: 0;
     padding: 0;

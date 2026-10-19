@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services &amp; Experiences | RISE Executive Advancement</title>
+    <meta name="description" content="Private career strategy, executive advisory, and leadership workshops with Justine Reilly. Explore RISE experiences for your next career chapter.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="services-page">
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container">
+            <a class="logo" href="index.html" style="text-decoration:none">RISE</a>
+            <ul class="nav-links">
+                <li><a href="index.html#framework">Framework</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="bio.html">About Justine</a></li>
+                <li><a href="#consultation">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="hero services-hero" aria-labelledby="services-heading">
+            <div class="hero-gradient"></div>
+            <div class="container hero-content">
+                <p class="rise-eyebrow">RISE™ Executive Advancement · Services &amp; Experiences</p>
+                <h1 id="services-heading">Your Next Chapter<br><em>Starts Here.</em></h1>
+                <p class="hero-subtitle">Personalized advisory experiences for ambitious professionals navigating promotions, leadership transitions, and executive opportunities.</p>
+                <a class="btn-primary" href="#consultation">Request a Private RISE Consultation</a>
+            </div>
+        </section>
+        <section class="section section-light" aria-label="RISE services">
+            <div class="container service-list">
+                <article class="service-entry service-entry-featured">
+                    <span class="service-number" aria-hidden="true">01</span>
+                    <div>
+                        <p class="rise-eyebrow">An introduction to RISE</p>
+                        <h2>Executive Strategy Intensive</h2>
+                        <p>A focused, private, single-session engagement to clarify your next career move, strengthen your positioning, and identify immediate opportunities for advancement.</p>
+                        <p class="service-fit">Best for an upcoming interview, promotion discussion, or pivotal career decision.</p>
+                        <p class="service-value">Leave with clearer priorities, a sharper articulation of your value, and practical next steps.</p>
+                    </div>
+                </article>
+                <article class="service-entry">
+                    <span class="service-number" aria-hidden="true">02</span>
+                    <div>
+                        <h2>Career Acceleration</h2>
+                        <p>A structured four-week experience to strengthen your executive narrative, cultivate influence, and develop a practical advancement strategy.</p>
+                        <p class="service-fit">Best for high-performing professionals preparing for their next leadership level.</p>
+                        <p class="service-value">Connect your experience to leadership impact, identify key relationships, and build an actionable plan for your next move.</p>
+                    </div>
+                </article>
+                <article class="service-entry">
+                    <span class="service-number" aria-hidden="true">03</span>
+                    <div>
+                        <h2>Private Executive Advisory</h2>
+                        <p>A highly personalized engagement incorporating the complete RISE framework: Reputation, Influence, Sponsorship, and Execution.</p>
+                        <p class="service-fit">Best for senior professionals pursuing consequential promotions or leadership transitions.</p>
+                        <p class="service-value">Develop strategic positioning, strengthen advocacy, and prepare to communicate with the presence and judgment your next chapter requires.</p>
+                    </div>
+                </article>
+                <article class="service-entry">
+                    <span class="service-number" aria-hidden="true">04</span>
+                    <div>
+                        <h2>Corporate Workshops &amp; Leadership Experiences</h2>
+                        <p>Interactive experiences designed to help emerging leaders develop executive presence, strategic influence, and career advancement capabilities.</p>
+                        <p class="service-fit">Available for professional organizations, leadership teams, and private groups.</p>
+                        <p class="service-value">Give participants a shared language for leadership impact and practical tools they can apply to their own careers.</p>
+                        <p class="service-fit">Custom scope and pricing discussed during consultation.</p>
+                    </div>
+                </article>
+                <p class="service-resources">Selected AI-enabled tools and resources may be incorporated where appropriate to your engagement and objectives.</p>
+            </div>
+        </section>
+        <section id="consultation" class="section section-final" aria-labelledby="consultation-heading">
+            <div class="container cta-elegant">
+                <p class="rise-eyebrow">A thoughtful next step</p>
+                <h2 id="consultation-heading">Every RISE engagement begins with a conversation.</h2>
+                <p class="cta-text">Programs are tailored to your objectives, timeline, and desired level of support. Investment and availability are discussed during your initial consultation.</p>
+                <form id="consultation-form" class="consultation-form" data-endpoint="" aria-describedby="inquiry-privacy inquiry-status">
+                    <p id="inquiry-status" role="status" aria-live="polite">Online inquiries are not available yet. Please contact justine.tech.exec@gmail.com directly.</p>
+                    <fieldset id="inquiry-fields" disabled>
+                        <legend>Your consultation inquiry</legend>
+                        <label for="inquiry-name">Name</label>
+                        <input id="inquiry-name" name="name" autocomplete="name" maxlength="120" required>
+                        <label for="inquiry-email">Email</label>
+                        <input id="inquiry-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                        <label for="inquiry-service">Service of interest</label>
+                        <select id="inquiry-service" name="service" required>
+                            <option value="">Please select</option>
+                            <option>Executive Strategy Intensive</option>
+                            <option>Career Acceleration</option>
+                            <option>Private Executive Advisory</option>
+                            <option>Corporate Workshops &amp; Leadership Experiences</option>
+                            <option>Not sure yet</option>
+                        </select>
+                        <label for="inquiry-message">What would you like support with?</label>
+                        <textarea id="inquiry-message" name="message" rows="5" maxlength="3000" required></textarea>
+                        <p id="inquiry-privacy">Please do not include confidential employer or client information. Your name, email, and message will be processed by Formspree and sent to Justine to respond to your inquiry.</p>
+                        <button class="btn-primary" type="submit">Send Inquiry</button>
+                    </fieldset>
+                </form>
+                <noscript><p>This inquiry form requires JavaScript. You can contact justine.tech.exec@gmail.com directly.</p></noscript>
+            </div>
+        </section>
+    </main>
+    <footer><div class="container footer-content"><a class="logo" href="index.html" style="text-decoration:none">RISE</a><p>&copy; 2026 RISE Framework</p></div></footer>
+    <script src="script.js"></script>
+    <script src="consultation.js"></script>
+</body>
+</html>
